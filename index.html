@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VYREX — Premium Trend Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="logo">VYREX<span>™</span></div>
+  <div class="links"><a href="#shop">Shop</a><a href="#trending">Trending</a><a href="#deals">Deals</a></div>
+  <div class="actions"><button class="iconbtn" onclick="openCart()">🛒 <span id="count">0</span></button><button class="btn" onclick="openCart()">Checkout</button></div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="tag">CURATED • TRENDING • PREMIUM</div>
+    <h1>YOUR NEXT<br><span>FAVOURITE.</span></h1>
+    <p>Discover internet-trending gadgets, lifestyle essentials and unique finds — all in one premium storefront.</p>
+    <div class="heroBtns"><button class="btn" onclick="go('shop')">Shop Collection</button><button class="btn ghost" onclick="go('trending')">Trending Now</button></div>
+  </div>
+  <div class="showcase"><div class="mock"><small>FEATURED DROP</small><div class="productImg">🎧</div><h3>Pulse Pro Wireless</h3><span>₹1,499</span></div></div>
+</header>
+
+<section id="shop"><h2>Shop by vibe</h2><p class="muted">Find something worth talking about.</p><div class="categories"><button class="chip active">All</button><button class="chip">Tech</button><button class="chip">Lifestyle</button><button class="chip">Fashion</button><button class="chip">Home</button><button class="chip">Gifts</button></div></section>
+
+<section id="trending"><div class="sectionHead"><div><h2>Trending picks</h2><p class="muted">Popular products curated for VYREX.</p></div><span class="tag">NEW DROPS</span></div><div class="grid">
+  <article class="product"><div class="pic">🎧</div><h3>Pulse Pro Wireless</h3><div class="price"><b>₹1,499</b><span class="old">₹2,199</span></div><button class="add" onclick="add('Pulse Pro Wireless',1499)">Add to bag</button></article>
+  <article class="product"><div class="pic">⌚</div><h3>Nova Smart Watch</h3><div class="price"><b>₹1,799</b><span class="old">₹2,499</span></div><button class="add" onclick="add('Nova Smart Watch',1799)">Add to bag</button></article>
+  <article class="product"><div class="pic">💡</div><h3>Ambient RGB Lamp</h3><div class="price"><b>₹899</b><span class="old">₹1,299</span></div><button class="add" onclick="add('Ambient RGB Lamp',899)">Add to bag</button></article>
+  <article class="product"><div class="pic">🎒</div><h3>Urban Utility Sling</h3><div class="price"><b>₹699</b><span class="old">₹999</span></div><button class="add" onclick="add('Urban Utility Sling',699)">Add to bag</button></article>
+</div></section>
+
+<section id="deals"><div class="banner"><div><div class="tag">LIMITED-TIME DROP</div><h2>Extra 10% off on your first order</h2><p class="muted">Use code <b>VYREX10</b> at checkout.</p></div><button class="btn" onclick="openCart()">Claim offer</button></div></section>
+
+<div class="modal" id="modal"><div class="sheet"><div class="sheetTop"><h2>Your Bag</h2><button class="iconbtn" onclick="closeModal()">✕</button></div><div id="content"></div></div></div>
+<footer>© 2026 VYREX™ — Premium trend store.</footer>
+<script src="script.js"></script>
+</body>
+</html>
